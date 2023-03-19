@@ -26,7 +26,6 @@ deactivate
 
 Install requirements
 ```
-Requirements consists of:
 Django==2.0
 django-widget-tweaks
 djangorestframework
@@ -48,13 +47,15 @@ Run dev server
 python3 manage.py runserver
 ```
 
-You might face error such as 
+You might face error such as
+
+![](https://user-images.githubusercontent.com/55325635/226154547-182de276-cc18-4052-bd9d-b36c270fbf62.png)
 ```
 AssertionError
 Exception Value:	
 database connection isn't set to UTC
 ```
-You might have to comment out 
+You must comment out 
 ```
 if offset != 0:
         raise AssertionError("database connection isn't set to UTC")
